@@ -61,6 +61,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Samples\AbstractizationSamples\Domain\SealedCustomer.cs" />
+    <Compile Include="Samples\AbstractizationSamples\SealedUseCase.cs" />
     <Compile Include="Samples\InheritanceSamples\ChainingConstructors.cs" />
     <Compile Include="Samples\InheritanceSamples\Domain\Employee.cs" />
     <Compile Include="Samples\InheritanceSamples\Domain\Enlisted.cs" />
@@ -84,7 +86,7 @@
     <Compile Include="Samples\PolymorphismSamples\Domain\BusinessCustomer.cs" />
     <Compile Include="Samples\PolymorphismSamples\Domain\ConsumerCustomer.cs" />
     <Compile Include="Samples\PolymorphismSamples\Domain\Customer.cs" />
-    <Compile Include="Samples\PolymorphismSamples\MethodOverloading.cs" />
+    <Compile Include="Samples\PolymorphismSamples\CompileTimePolymorphism.cs" />
     <Compile Include="Samples\PolymorphismSamples\RunTimePolymorphism.cs" />
   </ItemGroup>
   <ItemGroup>
