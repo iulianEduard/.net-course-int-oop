@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OOP.Samples.PolymorphismSamples.Domain
+namespace OOP.Samples.AbstractizationSamples.Domain
 {
     public class BusinessCustomer : Customer
     {
@@ -14,9 +14,8 @@ namespace OOP.Samples.PolymorphismSamples.Domain
 
         public override void Display()
         {
-            Console.WriteLine("Message from BusinessCustomer class");
-            Console.WriteLine($"Business Customer: Id: {Id}, Name: {Name}, Address: {Address}, CUI: {CUI}, VAT: {VAT}");
-            base.Display();
+            Console.WriteLine($"Business Customer: Id: {Id}, Name: {Name}, Address: {Address}" +
+                $" CUI: {CUI}, VAT: {VAT}");
         }
     }
 }

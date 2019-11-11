@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using OOP.Samples.AbstractizationSamples;
 using OOP.Samples.InheritanceSamples;
 using OOP.Samples.InterfaceSamples;
 using OOP.Samples.InterfaceSamples.Domain;
@@ -21,7 +22,13 @@ namespace OOP
 
             //InheritanceInjectedExample();
 
-            PolymorphismMethodOverloadingExample();
+            CompileTimePolymorphismExample();
+
+            RunTimPolymorphismExample();
+
+            AbstractExample();
+
+            SealedExample();
         }
 
         private static void ChainingConstructorsExample()
@@ -72,9 +79,9 @@ namespace OOP
             Console.ReadKey();
         }
 
-        private static void PolymorphismMethodOverloadingExample()
+        private static void CompileTimePolymorphismExample()
         {
-            var methodOverloading = new MethodOverloading();
+            var methodOverloading = new CompileTimePolymorphism();
 
             Console.WriteLine("Sum of 1 + 2 = ");
             Console.WriteLine(methodOverloading.Add(1, 2));
@@ -87,6 +94,30 @@ namespace OOP
 
             Console.WriteLine("Sum of 1 + 2 + 3 + 4 + 5 =");
             Console.WriteLine(methodOverloading.Add(1, 2, 3, 4, 5));
+
+            Console.ReadKey();
+        }
+
+        private static void RunTimPolymorphismExample()
+        {
+            var runtime = new RunTimePolymorphism();
+            runtime.Run();
+
+            Console.ReadKey();
+        }
+
+        private static void AbstractExample()
+        {
+            var abstractUseCase = new AbstractUseCase();
+            abstractUseCase.Run();
+
+            Console.ReadKey();
+        }
+
+        private static void SealedExample()
+        {
+            var sealedUseCase = new SealedUseCase();
+            sealedUseCase.Run();
 
             Console.ReadKey();
         }

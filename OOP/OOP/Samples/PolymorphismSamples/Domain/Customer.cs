@@ -2,10 +2,13 @@
 
 namespace OOP.Samples.PolymorphismSamples.Domain
 {
-    public abstract class Customer
+    public class Customer
     {
         public Guid Id { get; set; }
 
-        public abstract void Display();
+        public virtual void Display()
+        {
+            Console.WriteLine("This is from Customer class!");
+        }
     }
 }

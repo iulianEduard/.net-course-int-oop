@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace OOP.Samples.PolymorphismSamples.Domain
+namespace OOP.Samples.AbstractizationSamples.Domain
 {
-    class ConsumerCustomer : Customer
+    public class ConsumerCustomer : Customer
     {
         public string Name { get; set; }
 

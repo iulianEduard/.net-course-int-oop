@@ -1,6 +1,6 @@
 ﻿namespace OOP.Samples.PolymorphismSamples
 {
-    public class MethodOverloading
+    public class CompileTimePolymorphism
     {
         public int Add(int a, int b)
         {
